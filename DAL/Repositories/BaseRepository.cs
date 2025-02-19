@@ -38,7 +38,7 @@ namespace Messanger.DAL.Repositories
 
         private IDbConnection CreateConnection()
         {
-            return new SQLiteConnection("Data Source = D:\\Курсы\\DataFinder\\DAL\\DB\\social_network.db; Version = 3");
+            return new SQLiteConnection("Data Source = D:\\Курсы\\Messanger\\DAL\\DB\\social_network.db; Version = 3");
         }
     }
 }

@@ -14,6 +14,7 @@ namespace Messanger
     {
         static MessageService messageService;
         static UserService userService;
+        static FriendService friendService;
         public static MainView mainView;
         public static RegistrationView registrationView;
         public static AuthenticationView authenticationView;
@@ -23,11 +24,13 @@ namespace Messanger
         public static MessageSendingView messageSendingView;
         public static UserIncomingMessageView userIncomingMessageView;
         public static UserOutcomingMessageView userOutcomingMessageView;
+        public static AddFriendView addFriendView;
 
         static void Main(string[] args)
         {
             userService = new UserService();
             messageService = new MessageService();
+            friendService = new FriendService();
 
             mainView = new MainView();
             registrationView = new RegistrationView(userService);
@@ -38,6 +41,7 @@ namespace Messanger
             messageSendingView = new MessageSendingView(messageService, userService);
             userIncomingMessageView = new UserIncomingMessageView();
             userOutcomingMessageView = new UserOutcomingMessageView();
+            addFriendView = new AddFriendView(friendService);
 
             while (true)
             {

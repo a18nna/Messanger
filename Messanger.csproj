@@ -67,11 +67,13 @@
     <Compile Include="BLL\Exceptions\ExistingEmailException.cs" />
     <Compile Include="BLL\Exceptions\UserNotFoundException.cs" />
     <Compile Include="BLL\Exceptions\WrongPasswordException.cs" />
+    <Compile Include="BLL\Models\Friend.cs" />
     <Compile Include="BLL\Models\Message.cs" />
     <Compile Include="BLL\Models\MessageSendingData.cs" />
     <Compile Include="BLL\Models\User.cs" />
     <Compile Include="BLL\Models\UserAuthenticationData.cs" />
     <Compile Include="BLL\Models\UserRegistrationData.cs" />
+    <Compile Include="BLL\Services\FriendService.cs" />
     <Compile Include="BLL\Services\MessageService.cs" />
     <Compile Include="BLL\Services\UserService.cs" />
     <Compile Include="DAL\Entities\MessageEntity.cs" />
@@ -86,6 +88,7 @@
     <Compile Include="DAL\Repositories\UserRepository.cs" />
     <Compile Include="PLL\Helpers\AlertMessage.cs" />
     <Compile Include="PLL\Helpers\SuccessMessage.cs" />
+    <Compile Include="PLL\Views\AddFriendView.cs" />
     <Compile Include="PLL\Views\AuthenticationView.cs" />
     <Compile Include="PLL\Views\MainView.cs" />
     <Compile Include="PLL\Views\MessageSendingView.cs" />
