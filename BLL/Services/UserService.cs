@@ -18,6 +18,13 @@ namespace Messanger.BLL.Services
             userRepository = new UserRepository();
             messageService = new MessageService();
         }
+
+        public UserService(IUserRepository userRepository, MessageService messageService)
+        {
+            this.userRepository = userRepository;
+            this.messageService = messageService;
+        }
+
         public void Register(UserRegistrationData userRegistrationData)
         {
             if (String.IsNullOrEmpty(userRegistrationData.FirstName))
